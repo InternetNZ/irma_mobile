@@ -21,7 +21,7 @@ import {
 } from 'native-base';
 
 import { namespacedTranslation } from 'lib/i18n';
-import irmaLogo from 'assets/irmaLogo.png';
+import inzLogo from 'assets/inzLogo.png';
 
 export const t = namespacedTranslation('Sidebar');
 
@@ -131,7 +131,7 @@ export default class Sidebar extends Component {
       <Container>
         <Content bounces={false} style={styles.content}>
           <View style={{flexDirection: 'column', alignItems: 'center'}}>
-            <Image source={irmaLogo} style={styles.topImage} />
+            <Image source={inzLogo} style={styles.topImage} />
           </View>
           <List>
             { this.sidebarListItems.map(this.renderSidebarListItem) }

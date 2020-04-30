@@ -8,7 +8,7 @@
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/IRMA.app",
         "build": "xcodebuild -project ios/IRMA.xcodeproj -scheme IRMA -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
-        "name": "iPhone 6"
+        "name": "iPhone 8"
       }
     },
     "test-runner": "jest",
@@ -55,7 +55,7 @@
     "android": "npm-run-all go:build_check android:run",
     "android:run": "gomobile bind -target android -o android/irmagobridge/irmagobridge.aar github.com/privacybydesign/irma_mobile/irmagobridge && react-native run-android",
     "ios": "npm-run-all go:build_check ios:run",
-    "ios:run": "react-native run-ios --simulator \"iPhone 6\"",
+    "ios:run": "react-native run-ios --simulator \"iPhone 8\"",
     "go:build_check": "go build ./irmagobridge",
     "test": "jest components store lib",
     "test:e2e": "detox test -c ios.sim.debug",
@@ -84,6 +84,6 @@
     "redux-thunk": "^2.3.0"
   },
   "optionalDependencies": {
-    "fsevents": "^1.2.4"
+    "fsevents": "^1.2.12"
   }
 }

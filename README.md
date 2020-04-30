@@ -50,6 +50,9 @@ The IRMA app manages the user's IRMA attributes: receiving new attributes, selec
       - By default, the only available device or simulator will be used when running the app in the next step. See `yarn run react-native run-android --help` for more options.
 
 - Build and run the app for development:
+```
+yarn start
+```
     ```
     yarn run ios
     ```

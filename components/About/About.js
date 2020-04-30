@@ -14,7 +14,7 @@ import { namespacedTranslation } from 'lib/i18n';
 import Card from 'lib/UnwrappedCard';
 import PaddedContent from 'lib/PaddedContent';
 import Container from 'components/Container';
-import irmaLogo from 'assets/irmaLogo.png';
+import inzLogo from 'assets/inzLogo.png';
 
 const t = namespacedTranslation('About');
 
@@ -32,7 +32,7 @@ export default class About extends React.Component {
             <Card>
               <CardItem style={{flexDirection: 'column', alignItems: 'center'}}>
                 <Image
-                  source={irmaLogo}
+                  source={inzLogo}
                   style={{height: 120, position: 'relative', resizeMode: 'contain'}}
                 />
               </CardItem>

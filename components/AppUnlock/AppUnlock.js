@@ -13,7 +13,7 @@ import Container from 'components/Container';
 import PinEntry from './children/PinEntry';
 import { STATUS_AUTHENTICATING } from 'store/reducers/appUnlock';
 import { namespacedTranslation } from 'lib/i18n';
-import irmaLogo from 'assets/irmaLogo.png';
+import inzLogo from 'assets/inzLogo.png';
 
 export const t = namespacedTranslation('AppUnlock');
 
@@ -92,7 +92,7 @@ export default class AppUnlock extends Component {
       <Container>
         <View style={{flex: 1, flexDirection: 'column', alignItems: 'center'}}>
           <Image
-              source={irmaLogo}
+              source={inzLogo}
               style={{
                 marginTop: quarterWidth - 30,
                 height: 120,
