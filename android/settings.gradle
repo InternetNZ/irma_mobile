@@ -4,14 +4,12 @@ include ':app'
 include ':irmagobridge'
 
 include ':rncamerakit'
-include ':react-native-sentry'
 include ':react-native-languages'
 include ':react-native-gesture-handler'
 include ':react-native-reanimated'
 include ':@react-native-community_async-storage'
 
 project(':rncamerakit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera-kit/android/')
-project(':react-native-sentry').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sentry/android')
 project(':react-native-languages').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-languages/android')
 project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
 project(':react-native-reanimated').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-reanimated/android')

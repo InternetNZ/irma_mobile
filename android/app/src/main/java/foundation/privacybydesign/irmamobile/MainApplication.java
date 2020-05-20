@@ -9,7 +9,6 @@ import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
 import com.wix.RNCameraKit.RNCameraKitPackage;
-import io.sentry.RNSentryPackage;
 import com.reactcommunity.rnlanguages.RNLanguagesPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
@@ -34,7 +33,6 @@ public class MainApplication extends Application implements ReactApplication {
           new IrmaBridgePackage(),
           new IrmaVersionPackage(),
           new RNCameraKitPackage(),
-          new RNSentryPackage(), // TODO: Possible is instead: new RNSentryPackage(MainApplication.this),
           new RNLanguagesPackage(),
           new RNGestureHandlerPackage(),
           new AsyncStoragePackage()
