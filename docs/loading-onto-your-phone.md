@@ -1,4 +1,6 @@
-# Loading Onto Your Phone
+# Loading Onto Your iPhone
+
+_Caveat: Given continuously updating toolchains for MacOS, Xcode, golang, iOS and React Native this guide may need your help with updates!_
 
 ## Install Dependencies
 
@@ -33,8 +35,19 @@ yarn install
 ```
 cd $GOPATH/src/github.com/internetnz/irma_mobile
 yarn start
-yarn run ios
 ```
+
+Open Xcode.
+
+Open the project at `$GOPATH/src/github.com/internetnz/irma_mobile/ios`.
+
+From the menu, open Product > Destination > Add additional simulators.
+
+Ensure "iPhone 8" is in the list on the left. If not, click the plus at the bottom of the list and add it.
+
+From the menu, choose Product > Destination > iPhone 8.
+
+From the menu, click Product > Run.
 
 Once the project is running in the simulator, close it and move on to the next step.
 
@@ -43,6 +56,8 @@ Once the project is running in the simulator, close it and move on to the next s
 Open the project in Xcode.
 
 (locations of IDE options and config will change with different versions, sorry)
+
+From the menu, open View > Navigators > Show Project Navigator.
 
 Open Project Settings by clicking on the "IRMA" project.
 
