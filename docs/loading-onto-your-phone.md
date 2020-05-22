@@ -18,17 +18,38 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 ```
 
+Install gomobile
+```
+go get golang.org/x/mobile/cmd/gomobile
+gomobile init
+```
+
+## Clone irma_configuration
+
+In your folder with your dev projects:
+
+`git clone https://github.com/InternetNZ/inz-demo-scheme`
+
 ## Checkout
 
 Run `go get github.com/internetnz/irma_mobile`
+
+Ignore the error about "no Go files"
 
 ## Setup Project
 
 ```
 cd $GOPATH/src/github.com/internetnz/irma_mobile
-dep ensure
+go mod vendor
 yarn install
 ```
+
+If you get errors about installing fsevents during `yarn install`, run `npm rebuild fsevents` followed
+by `yarn install`.
+
+Install the irma_configuration:
+`mkdir -p irma_configuration/inz-demo`
+`cp -R <your path to the previously cloned inz-demo-scheme>/* irma_configuration/inz-demo/`
 
 ## Running the Project in the Simulator
 
