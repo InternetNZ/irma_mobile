@@ -4,7 +4,7 @@
 
 Install Xcode from the App store.
 
-Run `brew install go node`.
+Run `brew install go node dep yarn`.
 
 Ensure the GOPATH environment variable is set. 
 
